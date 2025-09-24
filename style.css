@@ -8,7 +8,7 @@
 /* Body */
 body {
   font-family: poppins, sans-serif;
-  background-color: #fffefeaf;
+  background-color: #ffffff;
   color: #333;
 }
 
@@ -52,4 +52,101 @@ body {
 .animation {
   display: flex;
   justify-content: center;
+  background-color: white;
+}
+
+/* Hero Section mit diagonalem Cut */
+.hero {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding-left: 60px;
+  color: rgb(19, 18, 18);
+  overflow: hidden;
+  background: none;
+  align-items: flex-start;
+  z-index: 0;
+}
+
+.hero h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, #2157ae, #06d6a0, #5c2e7f);
+  background-size: 600% 600%;
+  animation: gradientShift 20s ease infinite;
+  clip-path: polygon(0 0, 100% 0, 130% 0%, 0 80%);
+  z-index: -2;
+  pointer-events: none;
+}
+
+.hero .bubble {
+  position: absolute;
+  bottom: -100px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  filter: blur(25px);
+  animation: rise 20s infinite ease-in;
+  z-index: -1;
+}
+
+.hero .bubble:nth-child(1) {
+  width: 80px;
+  height: 80px;
+  left: 20%;
+  animation-duration: 18s;
+}
+.hero .bubble:nth-child(2) {
+  width: 120px;
+  height: 120px;
+  left: 40%;
+  animation-duration: 22s;
+  animation-delay: 3s;
+}
+.hero .bubble:nth-child(3) {
+  width: 60px;
+  height: 60px;
+  left: 70%;
+  animation-duration: 15s;
+  animation-delay: 6s;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-100vh) scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
