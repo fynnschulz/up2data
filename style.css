@@ -33,6 +33,7 @@ body {
   list-style: none;
   display: flex;
   gap: 30px;
+  margin-top: 15px;
 }
 
 /* Nav-menu li a */
