@@ -134,16 +134,22 @@ body {
 
 .svg-card {
   position: absolute;
-  top: calc(40px * var(--card-index));
-  left: calc(50px * var(--card-index));
+  top: calc(30px * var(--card-index));
+  left: calc(40px * var(--card-index));
   opacity: 1;
   z-index: 1;
   pointer-events: auto;
-  transition: z-index 0.5s;
+  transition: 
+    top 0.5s cubic-bezier(.4,0,.2,1),
+    left 0.5s cubic-bezier(.4,0,.2,1),
+    box-shadow 0.5s cubic-bezier(.4,0,.2,1),
+    z-index 0.5s;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
 }
 
 .svg-card.active {
   z-index: 2;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
 }
 
 
