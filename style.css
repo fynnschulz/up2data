@@ -134,12 +134,12 @@ body {
 
 .svg-card {
   position: absolute;
-  top: calc(100px * var(--card-index));
-  left: calc(120px * var(--card-index));
-  opacity: 0;
+  top: calc(80px * var(--card-index));
+  left: calc(90px * var(--card-index));
+  transition: opacity 0.5s, z-index 0.5s;
+  opacity: 0.5;
   z-index: 1;
   pointer-events: none;
-  transition: opacity 0.5s, z-index 0.5s;
 }
 
 .svg-card.active {
@@ -147,6 +147,7 @@ body {
   z-index: 2;
   pointer-events: auto;
 }
+
 
 
 .svg-card.active {
