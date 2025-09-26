@@ -99,7 +99,7 @@ body {
     linear-gradient(135deg, #1c60d6, #643d93, #09a2c4, #06d6a0, #5c2e7f);
   background-size: 300% 300%;
   animation: gradientShift 25s ease-in-out infinite, waveShift 18s ease-in-out infinite alternate;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 10%, 0 60%);
   z-index: -2;
   pointer-events: none;
 }
