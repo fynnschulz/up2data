@@ -19,6 +19,37 @@
 </head>
 <body>
   <nav class="navbar">
+    <svg width="400" height="500" viewBox="0 0 557 671" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Verlauf: oben links sehr durchsichtig → unten rechts weniger durchsichtig -->
+    <linearGradient id="gradTransparent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.05"/> <!-- oben links fast durchsichtig -->
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.35"/> <!-- unten rechts dunkler/kräftiger -->
+    </linearGradient>
+
+    <filter id="filter0_i_1_3" x="-50" y="-50" width="607" height="721" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feMorphology radius="5" operator="erode" in="SourceAlpha" result="effect1_innerShadow_1_3"/>
+      <feOffset dx="-50" dy="-50"/>
+      <feGaussianBlur stdDeviation="75"/>
+      <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="shape" result="effect1_innerShadow_1_3"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#filter0_i_1_3)">
+    <!-- Haupt-Rect jetzt mit umgedrehtem Gradient -->
+    <rect x="5" y="5" width="547" height="661" rx="24" fill="url(#gradTransparent)"/>
+    <!-- Rand bleibt wie gehabt -->
+    <rect x="2.5" y="2.5" width="552" height="666" rx="26.5" stroke="#BCB4B4" stroke-opacity="0.7" stroke-width="5"/>
+  </g>
+</svg>
+  </nav>
+  <div class="svg-container">
+
     <svg width="120" height="120" viewBox="0 0 1920 2000" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1051.27 288.467C1045.93 289.133 1038.73 290.6 1035.27 291.8C1031.8 293 1028.47 294.067 1027.67 294.2C1023.93 294.867 1011.8 301.8 1002.2 308.6C991.667 316.067 969.667 337.667 969.667 340.6C969.667 341.4 968.733 343.133 967.667 344.333C964.867 347.4 955 367.267 955 369.8C955 371 954.6 372.333 954.067 372.867C953 373.933 950.2 383 948.2 392.333C945.4 404.733 944.467 416.333 944.467 436.333C944.467 455.8 945.267 465.533 948.333 489.667C952.2 518.2 951.4 539 945.667 563C943.4 572.867 933.533 591 926.067 599.133C922.2 603.267 919 607.133 919 607.533C919 608.067 921.267 609.4 924.067 610.6C927.667 612.2 933.267 612.733 945 612.733C960.6 612.733 968.467 611.4 981 606.333C983.267 605.4 987.133 603.933 989.667 603C992.2 601.933 997.133 599.4 1000.47 597.4C1003.8 595.4 1007.27 593.667 1008.2 593.667C1010.6 593.667 1009.93 603.533 1007 611C1005.53 614.733 1004.33 618.067 1004.33 618.333C1004.33 619.533 1028.2 619 1028.87 617.8C1029.27 617.267 1031.93 616.333 1034.87 615.8C1045.93 614.067 1071.27 598.467 1086.07 584.467L1093.93 577L1097.13 581C1099.67 584.2 1100.33 586.6 1100.33 592.467C1100.33 596.467 1099.67 600.467 1098.73 601.4C1097.53 602.6 1097.8 603.133 1099.53 603.8C1103.27 605.267 1120.07 595.8 1129.93 586.867C1134.73 582.6 1141.53 574.733 1145.13 569.4C1148.73 564.067 1152.07 559.4 1152.73 559.267C1153.27 559 1153.67 558.2 1153.67 557.533C1153.67 556.733 1155.27 552.733 1157.13 548.6C1162.07 537.8 1163 535.4 1165.67 525.667C1171.13 505.533 1171.67 499.667 1171.67 452.333V406.333L1148.73 405.933L1125.8 405.667L1125.27 433.933C1125 449.533 1124.2 464.733 1123.4 467.533C1118.47 484.467 1105.8 497.8 1089.13 503.4C1080.47 506.333 1058.87 506.467 1048.6 503.533C1033.67 499.4 1020.33 489.933 1014.2 479C1012.87 476.467 1011.27 474.067 1010.87 473.667C1010.33 473.267 1008.87 469.133 1007.27 464.333C1000.2 441.533 998.2 426.067 1000.47 411.533C1001.27 405.667 1002.87 398.467 1003.8 395.267C1004.87 392.2 1005.67 389 1005.67 388.2C1005.67 386.067 1012.6 371.667 1013.93 371.267C1014.47 371 1015 369.933 1015 369C1015 365.8 1031.67 350.467 1039.27 346.467C1062.87 334.467 1095 338.467 1110.73 355.4C1113.93 358.867 1119.93 368.6 1121.27 372.6C1122.2 375.667 1121.93 375.667 1129.4 371.533C1132.87 369.533 1139.27 366.067 1143.67 363.667C1169.8 349.4 1169 349.933 1168.73 346.333C1168.6 344.467 1165.13 337.933 1161.13 331.933C1150.6 316.467 1139 306.333 1122.47 298.467C1108.2 291.667 1102.47 289.933 1087.13 288.467C1071.67 286.867 1065.4 286.867 1051.27 288.467Z" fill="black"/>
 <path d="M468.333 420.333V533.667H487H505.667V420.333V307H487H468.333V420.333Z" fill="black"/>
@@ -279,34 +310,6 @@
       </svg>
     </div>
   </div>
-<svg width="557" height="671" viewBox="0 0 557 671" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <!-- Verlauf: oben links sehr durchsichtig → unten rechts weniger durchsichtig -->
-    <linearGradient id="gradTransparent" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#000000" stop-opacity="0.05"/> <!-- oben links fast durchsichtig -->
-      <stop offset="100%" stop-color="#000000" stop-opacity="0.35"/> <!-- unten rechts dunkler/kräftiger -->
-    </linearGradient>
-
-    <filter id="filter0_i_1_3" x="-50" y="-50" width="607" height="721" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-      <feMorphology radius="5" operator="erode" in="SourceAlpha" result="effect1_innerShadow_1_3"/>
-      <feOffset dx="-50" dy="-50"/>
-      <feGaussianBlur stdDeviation="75"/>
-      <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-      <feBlend mode="normal" in2="shape" result="effect1_innerShadow_1_3"/>
-    </filter>
-  </defs>
-
-  <g filter="url(#filter0_i_1_3)">
-    <!-- Haupt-Rect jetzt mit umgedrehtem Gradient -->
-    <rect x="5" y="5" width="547" height="661" rx="24" fill="url(#gradTransparent)"/>
-    <!-- Rand bleibt wie gehabt -->
-    <rect x="2.5" y="2.5" width="552" height="666" rx="26.5" stroke="#BCB4B4" stroke-opacity="0.7" stroke-width="5"/>
-  </g>
-</svg>
 
   <div style="height: 500px;"></div>
   <script src="script.js"></script>
