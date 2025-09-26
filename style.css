@@ -125,3 +125,35 @@ body {
   left: 0;
   height: 28px;
 }
+
+.svg-cards {
+  position: relative;
+  width: 100%;
+  height: 700px; /* adjust as needed */
+}
+
+.svg-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s, z-index 0.5s;
+  opacity: 0.5;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.svg-card.active {
+  opacity: 1;
+  z-index: 2;
+  pointer-events: auto;
+}
+
+.svg-text {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  color: #222;
+  font-size: 2rem;
+  font-weight: bold;
+  /* add more styles as needed */
+}
