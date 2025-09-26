@@ -58,7 +58,7 @@ body {
 /* Hero Section mit diagonalem Cut */
 .hero {
   position: relative;
-  height: 60vh;
+  height: 120vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -125,8 +125,3 @@ body {
   height: 28px;
 }
 
-.hero {
-  height: 100vh; /* bisher */
-  /* mach daraus z. B.: */
-  height: 120vh; /* verlängert die Seite */
-}
